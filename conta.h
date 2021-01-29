@@ -10,6 +10,9 @@ class Conta{
         std::string Banco, Titular;
 
     public:
+
+        Conta(int Agencia, int numConta, double Saldo, std::string Banco, std::string Titular);
+
         int getAgencia();
         int getnumConta();
         double getSaldo();

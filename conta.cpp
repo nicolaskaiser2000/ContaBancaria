@@ -3,6 +3,15 @@
 #include <string>
 #include "conta.h"
 
+// CONSTRUTOR
+    Conta::Conta(int Agencia, int numConta, double Saldo, std::string Banco, std::string Titular){
+        this->Agencia = Agencia;
+        this->Saldo = Saldo;
+        this->numConta = numConta;
+        this->Banco = Banco;
+        this->Titular = Titular;
+    }
+
 // GETTERS
 int Conta::getAgencia(){
     return Agencia;
@@ -20,7 +29,7 @@ std::string Conta::getTitular(){
     return Titular;
 }
 
-//SETTERS
+// SETTERS
 int Conta::setAgencia(int Agencia){
     return this->Agencia = Agencia;
 }
@@ -37,7 +46,7 @@ std::string Conta::setTitular(std::string Titular){
     return this->Titular = Titular;
 }
 
-//METODOS
+// METODOS
 bool Conta::Sacar(double Valor){
 
     if(Valor>Saldo){
