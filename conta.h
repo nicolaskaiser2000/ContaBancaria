@@ -25,5 +25,5 @@ class Conta{
         bool Sacar(double Valor);
         void Depositar(double Valor);
         void Transferir(Conta &Destino, double Valor);
-        double ConsultarSalto(double Saldo);
+        double ConsultarSalto();
 };
